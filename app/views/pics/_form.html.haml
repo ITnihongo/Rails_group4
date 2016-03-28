@@ -1,0 +1,11 @@
+= simple_form_for @pic , html: {multipart: true } do |f|
+	
+
+	
+	.form-group
+		=f.input :title, input_html: {class: 'form-control'}
+	.form-group
+		=f.input :discription, input_html: {class: 'form-control'}
+	
+
+	=f.button :submit, class: "btn btn-info"

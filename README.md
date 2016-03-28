@@ -24,8 +24,8 @@ Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE.
 To watch some training videos, visit http://www.youtube.com/user/c9ide
 
 ##チーム メンバー
--20122139 グエン・ティエン・ギエップ
+-20122139 グエン・ティエン・ギエップ 
 -20121866	グエン・フィ・フーン
 -20121609	チャン・ディン・ザップ
--20121454	グエン・フー・ズオン	
+-20121454	グエン・フー・ズオン  Duong	
 -20121476	ズオン・チョン・ダオ
