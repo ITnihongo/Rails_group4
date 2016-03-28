@@ -27,5 +27,5 @@ To watch some training videos, visit http://www.youtube.com/user/c9ide
 -20122139 グエン・ティエン・ギエップ 
 -20121866	グエン・フィ・フーン
 -20121609	チャン・ディン・ザップ
--20121454	グエン・フー・ズオン  Duong	
+-20121454	グエン・フー・ズオン  Duong	test ten duong
 -20121476	ズオン・チョン・ダオ
