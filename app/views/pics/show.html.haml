@@ -1,0 +1,10 @@
+%h1= @pic.title
+%p= @pic.discription
+%p
+Pic By 
+= @pic.user.email
+%br
+
+= link_to "back", root_path
+= link_to "Edit", edit_pic_path
+= link_to "Delete", pic_path, method: :delete, data: {confirm: "are u sure?"}
