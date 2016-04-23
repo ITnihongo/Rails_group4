@@ -21,3 +21,20 @@
                             - if (user_signed_in?) && (@pic.user_id == current_user.id)
                                 = link_to "Edit", edit_pic_path, class: "btn btn-info"
                                 = link_to "Delete", pic_path, method: :delete, data: {confirm: "Are u sure?"}, class: "btn btn-danger"
+                %br
+                %br
+                - if user_signed_in?
+                    =  simple_form_for(@pic_comment) do |f|
+                        .field
+                            %br
+                            .form-group
+                                = f.input  :commemt, input_html: {class: 'form-control'}
+                            %br
+                                = f.hidden_field :pic_id, :value => @pic.id
+                            %br
+                        .actions
+                        =f.button :submit, class: "btn btn-info"
+                %h2 Comment
+                %ul	
+                    - @pic.pic_comment.each do |pic_comment|
+                        %li= pic_comment.commemt

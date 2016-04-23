@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :pic_comments
   devise_for :users
   resources :pics do 
     member do

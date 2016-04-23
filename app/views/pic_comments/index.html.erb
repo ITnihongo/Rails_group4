@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pic Comments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Pic</th>
+      <th>Commemt</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pic_comments.each do |pic_comment| %>
+      <tr>
+        <td><%= pic_comment.user_id %></td>
+        <td><%= pic_comment.pic_id %></td>
+        <td><%= pic_comment.commemt %></td>
+        <td><%= link_to 'Show', pic_comment %></td>
+        <td><%= link_to 'Edit', edit_pic_comment_path(pic_comment) %></td>
+        <td><%= link_to 'Destroy', pic_comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pic comment', new_pic_comment_path %>
